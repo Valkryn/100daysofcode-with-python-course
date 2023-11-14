@@ -1,5 +1,7 @@
-from datetime import datetime  # imports use of date and time ; year,month ,day , hours , minutes, seconds , milliseconds
+from datetime import \
+    datetime  # imports use of date and time ; year,month ,day , hours , minutes, seconds , milliseconds
 from datetime import date  # imports use of just date ; year , month , day
+from datetime import timedelta
 
 
 def main():
@@ -14,6 +16,8 @@ def main():
         print('sorry not christmas yet')
     else:
         print('Yay its christmas')
+    t = timedelta(days=10, hours=14)
+    print(str(t + datetime.today()))
 
 
 if __name__ == '__main__':
