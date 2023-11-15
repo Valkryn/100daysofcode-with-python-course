@@ -18,6 +18,3 @@ def get_hundred_days_end_date():
 def get_days_between_pb_start_first_joint_pycon():
     days_between = pycon_date - pybites_founded
     return days_between.days
-
-
-

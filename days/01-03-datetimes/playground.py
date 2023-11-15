@@ -2,6 +2,7 @@ from datetime import \
     datetime  # imports use of date and time ; year,month ,day , hours , minutes, seconds , milliseconds
 from datetime import date  # imports use of just date ; year , month , day
 from datetime import timedelta
+import time
 
 
 def main():
@@ -21,8 +22,7 @@ def main():
     pomodoro_1 = timedelta(seconds=1)
     play_time = timedelta(seconds=30)
     print(play_time - pomodoro_1)
-    day100 = timedelta(days=100)
-    print(day100)
+    print(time.strptime("02/12/1996 5:53", "%m/%d/%Y %H:%M"))
 
 
 
