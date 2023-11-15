@@ -18,6 +18,12 @@ def main():
         print('Yay its christmas')
     t = timedelta(days=10, hours=14)
     print(str(t + datetime.today()))
+    pomodoro_1 = timedelta(seconds=1)
+    play_time = timedelta(seconds=30)
+    print(play_time - pomodoro_1)
+    day100 = timedelta(days=100)
+    print(day100)
+
 
 
 if __name__ == '__main__':
