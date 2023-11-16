@@ -24,3 +24,5 @@ def pomodoro(study_time, seconds_1):
 
 if __name__ == '__main__':
     main()
+
+#add break cycle
