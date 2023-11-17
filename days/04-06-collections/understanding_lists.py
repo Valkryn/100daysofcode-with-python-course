@@ -1,3 +1,4 @@
+# taken from https://pynative.com/python-list-exercise-with-solutions/#h-exercise-2-concatenate-two-lists-index-wise
 # Exercise 1: Reverse a list in Python output ; [500, 400, 300, 200, 100]
 list1 = [100, 200, 300, 400, 500]
 print(list1[::-1])
