@@ -15,9 +15,14 @@ def get_movies_by_director(data=movie_csv):
     directors = defaultdict(list)
     with open(data, encoding='utf-8') as file:
         for line in csv.DictReader(file):
-            pass
-
-
+            try:
+                director = line['director_name']
+                title = line['movie_title'].replace('\xa0', '')
+                year = int(line['title_year'])
+                score = float(line['imdb_score'])
+            except ValueError:
+                continue
+            m = Movie(title=title, year=year, score=score)
 
 
 # def calc_mean_score(movies):
