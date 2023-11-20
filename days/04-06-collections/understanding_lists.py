@@ -11,3 +11,12 @@ list4 = []
 for i, j in zip(list2, list3):
     list4.append(i + j)
 print(list4)
+
+# Exercise 3: Turn every item of a list into its square output ; [1, 4, 9, 16, 25, 36, 49]
+numbers = [1, 2, 3, 4, 5, 6, 7]
+result = list(map(lambda x: x ** 2, numbers))
+print(result)
+
+#Exercise 4: Concatenate two lists in the following order output ; ['Hello Dear', 'Hello Sir', 'take Dear', 'take Sir']
+list5 = ["Hello ", "take "]
+list6 = ["Dear", "Sir"]
