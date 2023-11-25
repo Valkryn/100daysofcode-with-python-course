@@ -17,12 +17,13 @@ def get_movies_by_director(data=movie_csv):
         for line in csv.DictReader(file):
             try:
                 director = line['director_name']
-                title = line['movie_title']
-                year = line['year']
+                title = line['movie_title'].replace('\xa0', '')
+                year = line['title_year']
                 score = line['imdb_score']
             except ValueError:
                 continue
             m = Movie(title=title, year=year, score=score)
+            print(m)
             directors[director].append(m)
 
 
